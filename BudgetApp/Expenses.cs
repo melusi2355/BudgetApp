@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BudgetApp
 {
-    public class Expenses
+    public abstract class Expenses
     {
         // Parent class variable declaration
         private string description;
