@@ -1,0 +1,120 @@
+﻿<Window x:Class="BudgetApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1220">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFDD9A1D" Offset="0"/>
+                <GradientStop Color="#FF745FBA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblBudgetHeading" Content="BudgetApp Menu" HorizontalAlignment="Left" Margin="501,35,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontFamily="Broadway">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDD9A1D" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <GroupBox x:Name="grpIncomeTax" Header="" HorizontalAlignment="Left" Height="167" Margin="23,132,0,0" VerticalAlignment="Top" Width="386" FontWeight="Bold">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <TextBox x:Name="txbIncome" HorizontalAlignment="Left" Height="23" Margin="53,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="lblTaxdeducted" Content="Tax Deductions" HorizontalAlignment="Left" Margin="262,222,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txbTaxDeductions" HorizontalAlignment="Left" Height="23" Margin="53,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="lblIncome1" Content="Income &amp; Tax" HorizontalAlignment="Left" Margin="141,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.217,0.517" FontFamily="Broadway"/>
+        <GroupBox x:Name="grpExpenses" Header="" HorizontalAlignment="Left" Height="233" Margin="23,349,0,0" VerticalAlignment="Top" Width="386" FontWeight="Bold">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <Label x:Name="lblExpensesHeader" Content="Monthly Expenses" HorizontalAlignment="Left" Margin="141,322,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.217,0.517" FontFamily="Broadway"/>
+        <Label Content="Groceries" HorizontalAlignment="Left" Margin="262,373,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblGroceries" Content="Wanter &amp; Lights" HorizontalAlignment="Left" Margin="262,410,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblTravel" Content="Travel Costs" HorizontalAlignment="Left" Margin="262,451,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblCellPhone" Content="CellPhone" HorizontalAlignment="Left" Margin="262,488,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="lblOtherExpenses" Content="Other Expenses" HorizontalAlignment="Left" Margin="262,524,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txbGroceries" HorizontalAlignment="Left" Height="23" Margin="37,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="txbWaterAndLight" HorizontalAlignment="Left" Height="23" Margin="37,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="txbTravelCosts" HorizontalAlignment="Left" Height="23" Margin="36,454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="txbCellphone" HorizontalAlignment="Left" Height="23" Margin="36,491,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <TextBox x:Name="txbOtherExpenses" HorizontalAlignment="Left" Height="23" Margin="38,531,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201"/>
+        <GroupBox x:Name="grpProperty" Header="Property Option" HorizontalAlignment="Left" Height="116" Margin="460,132,0,0" VerticalAlignment="Top" Width="334" FontWeight="Bold">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Yellow" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <Label x:Name="lblRentHouse" Content="Renting The House" HorizontalAlignment="Left" Margin="547,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.217,0.517" FontFamily="Broadway"/>
+        <GroupBox x:Name="grpRent" Header="" HorizontalAlignment="Left" Height="91" Margin="460,349,0,0" VerticalAlignment="Top" Width="334" FontWeight="Bold">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <Label x:Name="lblRent" Content="Rent" HorizontalAlignment="Left" Margin="721,384,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txbMonthlyRent" HorizontalAlignment="Left" Height="22" Margin="503,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" IsEnabled="False" Text="0"/>
+        <GroupBox x:Name="grpVehicle" Header="Vehicle Purchase Option" HorizontalAlignment="Left" Height="117" Margin="456,465,0,0" VerticalAlignment="Top" Width="338" FontWeight="Bold">
+            <GroupBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Yellow" Offset="0"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </GroupBox.Background>
+        </GroupBox>
+        <ComboBox x:Name="cmbVehicleChoice" HorizontalAlignment="Left" Margin="486,514,0,0" VerticalAlignment="Top" Width="269" FontWeight="Bold" SelectionChanged="cmbVehicleChoice_SelectionChanged"/>
+        <RadioButton x:Name="radRent" Content="Rent Property" HorizontalAlignment="Left" Margin="526,174,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="radRent_Checked"/>
+        <RadioButton x:Name="radBuy" Content="Buy Property" HorizontalAlignment="Left" Margin="526,200,0,0" VerticalAlignment="Top" FontWeight="Bold" Checked="radBuy_Checked"/>
+        <ListBox x:Name="lbBudgetDetails" Margin="825,140,29,190" Foreground="DeepPink" FontWeight="Bold" FontFamily="Arial Black">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FF745FBA" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <Button x:Name="btnAvailabeCash" Content="Available Cash" HorizontalAlignment="Left" Margin="825,475,0,0" VerticalAlignment="Top" Width="366" Height="39" FontWeight="Bold" Click="btnAvailabeCash_Click" IsEnabled="False">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFDD9A1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="825,531,0,0" VerticalAlignment="Top" Width="366" Height="41" FontWeight="Bold" Click="btnReset_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFDD9A1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblIncome" Content="Income " HorizontalAlignment="Left" Margin="262,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.47,1.472" FontWeight="Bold"/>
+        <Button x:Name="btnSavings" Content="Add Savings" HorizontalAlignment="Left" Margin="460,260,0,0" VerticalAlignment="Top" Width="334" Height="39" FontWeight="Bold" Click="btnSavings_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFDD9A1D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblDetails" Content="Budget Details" HorizontalAlignment="Left" Margin="947,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.217,0.517" FontFamily="Broadway"/>
+    </Grid>
+</Window>
